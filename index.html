@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-heading">What to do?</h1>
+    </header>
+    <section class="new-task">
+      <div class="container to-do-form">
+        <h2 class="form-heading">Add a New Task</h2>
+        <div class="line"></div>
+        <form class="add-task-form">
+          <div class="form-actions">
+            <input type="text" name="task" placeholder="Enter task" />
+            <button type="submit"><i class="fas fa-plus"></i></button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="task-list">
+      <div class="container list-container">
+        <div class="search">
+          <form class="task-search-form">
+            <input type="text" name="search" placeholder="Search" />
+            <button><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div class="cards-container"></div>
+        <div class="done">
+          <button class="btn check-all">All done</button>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>
